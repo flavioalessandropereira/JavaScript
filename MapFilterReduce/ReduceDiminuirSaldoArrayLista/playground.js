@@ -1,0 +1,31 @@
+const  lista = [
+    {
+        name: 'sabão em pó',
+        preco: 30,
+    },
+    {
+        name: 'cereal',
+        preco: 12,
+    },
+    {
+        name: 'toalha',
+        preco: 30,
+    },
+];
+
+const saldoDisponivel = 100;
+
+
+function calculaSaldoFinal(saldoDisponivel, lista){
+    return lista.reduce(function(prev, current, index){
+
+        console.log('rodada', index + 1);
+        console.log({prev});
+        console.log({current});
+
+        return prev - current.preco;
+
+    }, saldoDisponivel)
+}
+
+console.log(calculaSaldoFinal(saldoDisponivel, lista));
