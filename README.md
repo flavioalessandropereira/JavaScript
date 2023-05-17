@@ -1,3 +1,3 @@
-# JavaScript :computer:
+# JavaScript DIO:computer:
 
 Projetos realizados conforme, orientação da plataforma DIO ...
